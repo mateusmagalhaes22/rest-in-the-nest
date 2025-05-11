@@ -1,0 +1,35 @@
+### list users
+GET http://localhost:3000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlQGV4YW1wbGUuY29tIiwic3ViIjoiZjU2NTQzOWEtZGI4MS00YjZmLWI2OWMtZWIxNjJiMmY2Y2I0IiwiaWF0IjoxNzQ2OTk5Njk2LCJleHAiOjE3NDcwMDMyOTZ9.8fkqoe6ktMVe6ORbh_Gw5rWYbyEiZmIYWzlTCiY6mRk
+
+### get user
+GET http://localhost:3000/user/f565439a-db81-4b6f-b69c-eb162b2f6cb4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlQGV4YW1wbGUuY29tIiwic3ViIjoiZjU2NTQzOWEtZGI4MS00YjZmLWI2OWMtZWIxNjJiMmY2Y2I0IiwiaWF0IjoxNzQ2OTk5Njk2LCJleHAiOjE3NDcwMDMyOTZ9.8fkqoe6ktMVe6ORbh_Gw5rWYbyEiZmIYWzlTCiY6mRk
+
+
+### create user
+POST http://localhost:3000/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlQGV4YW1wbGUuY29tIiwic3ViIjoiZjU2NTQzOWEtZGI4MS00YjZmLWI2OWMtZWIxNjJiMmY2Y2I0IiwiaWF0IjoxNzQ2OTk5Njk2LCJleHAiOjE3NDcwMDMyOTZ9.8fkqoe6ktMVe6ORbh_Gw5rWYbyEiZmIYWzlTCiY6mRk
+Content-Type: application/json
+
+{
+    "name": "mateus",
+    "email": "teste@example.com",
+    "fone": "+5583998888430",
+    "password": "mateus"
+}
+
+### update user
+PATCH http://localhost:3000/user/f565439a-db81-4b6f-b69c-eb162b2f6cb4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlQGV4YW1wbGUuY29tIiwic3ViIjoiZjU2NTQzOWEtZGI4MS00YjZmLWI2OWMtZWIxNjJiMmY2Y2I0IiwiaWF0IjoxNzQ2OTk5Njk2LCJleHAiOjE3NDcwMDMyOTZ9.8fkqoe6ktMVe6ORbh_Gw5rWYbyEiZmIYWzlTCiY6mRk
+Content-Type: application/json
+
+{
+    "name": "mateus",
+    "email": "mateus@example.com",
+    "fone": "+5583998888430"
+}
+
+### delete user
+DELETE http://localhost:3000/user/bf236e10-179f-4441-84f3-101abef04268
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlQGV4YW1wbGUuY29tIiwic3ViIjoiZjU2NTQzOWEtZGI4MS00YjZmLWI2OWMtZWIxNjJiMmY2Y2I0IiwiaWF0IjoxNzQ2OTk5Njk2LCJleHAiOjE3NDcwMDMyOTZ9.8fkqoe6ktMVe6ORbh_Gw5rWYbyEiZmIYWzlTCiY6mRk
