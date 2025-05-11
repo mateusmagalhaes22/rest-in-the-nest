@@ -21,9 +21,7 @@ export class User {
 
     @BeforeInsert()
     async encryptPassword(){
-        console.log(this.password)
         this.password = await bcrypt.hash(this.password, 10);
-        console.log(this.password)
     }
 
 }
