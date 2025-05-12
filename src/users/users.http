@@ -1,15 +1,15 @@
 ### list users
 GET http://localhost:3000/user
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdGV1c0BleGFtcGxlLmNvbSIsInN1YiI6ImY1NjU0MzlhLWRiODEtNGI2Zi1iNjljLWViMTYyYjJmNmNiNCIsImlhdCI6MTc0NzAwMTY1MywiZXhwIjoxNzQ3MDA1MjUzfQ.6VkJmYQ9WT4ARV67Xmr6sa8kNH_97WzXnfE7aG84EIs
+Authorization: Bearer {token}
 
 ### get user
 GET http://localhost:3000/user/f565439a-db81-4b6f-b69c-eb162b2f6cb4
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlQGV4YW1wbGUuY29tIiwic3ViIjoiZjU2NTQzOWEtZGI4MS00YjZmLWI2OWMtZWIxNjJiMmY2Y2I0IiwiaWF0IjoxNzQ2OTk5Njk2LCJleHAiOjE3NDcwMDMyOTZ9.8fkqoe6ktMVe6ORbh_Gw5rWYbyEiZmIYWzlTCiY6mRk
+Authorization: Bearer {token}
 
 
 ### create user
 POST http://localhost:3000/user/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlQGV4YW1wbGUuY29tIiwic3ViIjoiZjU2NTQzOWEtZGI4MS00YjZmLWI2OWMtZWIxNjJiMmY2Y2I0IiwiaWF0IjoxNzQ2OTk5Njk2LCJleHAiOjE3NDcwMDMyOTZ9.8fkqoe6ktMVe6ORbh_Gw5rWYbyEiZmIYWzlTCiY6mRk
+Authorization: Bearer {token}
 Content-Type: application/json
 
 {
@@ -21,7 +21,7 @@ Content-Type: application/json
 
 ### update user
 PATCH http://localhost:3000/user/f565439a-db81-4b6f-b69c-eb162b2f6cb4
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlQGV4YW1wbGUuY29tIiwic3ViIjoiZjU2NTQzOWEtZGI4MS00YjZmLWI2OWMtZWIxNjJiMmY2Y2I0IiwiaWF0IjoxNzQ2OTk5Njk2LCJleHAiOjE3NDcwMDMyOTZ9.8fkqoe6ktMVe6ORbh_Gw5rWYbyEiZmIYWzlTCiY6mRk
+Authorization: Bearer {token}
 Content-Type: application/json
 
 {
@@ -32,4 +32,4 @@ Content-Type: application/json
 
 ### delete user
 DELETE http://localhost:3000/user/f565439a-db81-4b6f-b69c-eb162b2f6cb4
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlQGV4YW1wbGUuY29tIiwic3ViIjoiZjU2NTQzOWEtZGI4MS00YjZmLWI2OWMtZWIxNjJiMmY2Y2I0IiwiaWF0IjoxNzQ2OTk5Njk2LCJleHAiOjE3NDcwMDMyOTZ9.8fkqoe6ktMVe6ORbh_Gw5rWYbyEiZmIYWzlTCiY6mRk
+Authorization: Bearer {token}

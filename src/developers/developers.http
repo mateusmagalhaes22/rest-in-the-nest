@@ -1,11 +1,14 @@
 ### list developers
 GET http://localhost:3000/developers
+Authorization: Bearer {token}
 
 ### get developer
 GET http://localhost:3000/developers/dev_k2sr8_nQ3bPMewGYVbGv1
+Authorization: Bearer {token}
 
 ### create developer
 POST http://localhost:3000/developers/
+Authorization: Bearer {token}
 Content-Type: application/json
 
 {
@@ -16,6 +19,7 @@ Content-Type: application/json
 
 ### update developer
 PATCH http://localhost:3000/developers/dev_k2sr8_nQ3bPMewGYVbGv1
+Authorization: Bearer {token}
 Content-Type: application/json
 
 {
@@ -26,3 +30,4 @@ Content-Type: application/json
 
 ### delete developer
 DELETE http://localhost:3000/developers/dev_k2sr8_nQ3bPMewGYVbGv1
+Authorization: Bearer {token}
