@@ -1,14 +1,14 @@
 ### list users
-GET http://localhost:3000/user
-Authorization: Bearer {token}
+GET http://localhost:8080/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluQGFkbWluLmNvbSIsInN1YiI6ImZiOWJlZWE2LTYxNWUtNDU1Ny1hZDFkLTMzYTkwNmYyYTExMiIsImlhdCI6MTc0ODYyMjY1MCwiZXhwIjoxNzQ4NjI2MjUwfQ.weWoWRrDZu9Zoe-DBk6TZXGQt06j0ASl4nnKQ6_SJVg
 
 ### get user
-GET http://localhost:3000/user/f565439a-db81-4b6f-b69c-eb162b2f6cb4
+GET http://localhost:8080/users/f565439a-db81-4b6f-b69c-eb162b2f6cb4
 Authorization: Bearer {token}
 
 
 ### create user
-POST http://localhost:3000/user/
+POST http://localhost:8080/users/
 Authorization: Bearer {token}
 Content-Type: application/json
 
@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 
 ### update user
-PATCH http://localhost:3000/user/f565439a-db81-4b6f-b69c-eb162b2f6cb4
+PATCH http://localhost:8080/users/f565439a-db81-4b6f-b69c-eb162b2f6cb4
 Authorization: Bearer {token}
 Content-Type: application/json
 
@@ -31,5 +31,5 @@ Content-Type: application/json
 }
 
 ### delete user
-DELETE http://localhost:3000/user/f565439a-db81-4b6f-b69c-eb162b2f6cb4
+DELETE http://localhost:8080/users/f565439a-db81-4b6f-b69c-eb162b2f6cb4
 Authorization: Bearer {token}

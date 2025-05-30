@@ -6,6 +6,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import * as bcrypt from 'bcrypt';
 import { ConfigService } from '@nestjs/config';
+import { UserResponseDto } from './dto/user-response.dto';
 
 @Injectable()
 export class UserService implements OnModuleInit{
@@ -34,13 +35,17 @@ export class UserService implements OnModuleInit{
     return this.repository.save(user)
   }
 
-  findAll() {
-    return this.repository.find()
-  }
+  async findAll(): Promise<UserResponseDto[]> {
+  const users = await this.repository.find();
 
-  findOne(id: string) {
-    return this.repository.findOneBy({ id });
-  }
+  return UserResponseDto.fromEntities(users);
+}
+
+  async findOne(id: string): Promise<UserResponseDto> {
+  const user = await this.repository.findOneBy({ id });
+
+  return UserResponseDto.fromEntity(user);
+}
 
   findOneByEmail(email: string) {
     return this.repository.findOneBy({ email });
